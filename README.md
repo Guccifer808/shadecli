@@ -30,7 +30,7 @@ npm install --save-dev shadecli
 
 ## Usage
 
-Once shadecli is installed, you can run it directly from the command line using the following syntax:
+Once `shadecli` is installed, you can run it directly from the command line using the following syntax:
 
 ```bash
 npx shadecli --color <base-color> --name <color-name>
@@ -38,9 +38,9 @@ npx shadecli --color <base-color> --name <color-name>
 
 ## Arguments:
 
---color (required): The base color in HEX or RGB format. Example: #3490dc.
---name (optional): The name for the color (default is primary). This is used to generate the names for the shades (e.g., primary-50, primary-100, etc.).
-By default, shadecli will look for a tailwind.config.js file in your project and update it with the new color shades (by default, it looks for tailwind.config.js or tailwind.config.cjs).
+- --color (required): The base color in HEX or RGB format. Example: `#3490dc`.`<br>`
+- --name (optional): The name for the color (default is primary). This is used to generate the names for the shades (e.g., primary-50, primary-100, etc.).`<br>`
+  By default, `shadecli` will look for a tailwind.config.js file in your project and update it with the new color shades (by default, it looks for tailwind.config.js or tailwind.config.cjs).
 
 ## Example:
 
@@ -50,7 +50,7 @@ To generate color shades for a `#ab6655` base color and add them to the Tailwind
 npx shadecli --color "#ab6655" --name "customPrimary"
 ```
 
-This will generate shades for the color and add them to the tailwind.config.js file. If the file exists, shadecli will merge the new shades with the existing configuration. It will also create a backup of the original config file, named tailwind.config.backup.js
+This will generate shades for the color and add them to the tailwind.config.js file. If the file exists, `shadecli` will merge the new shades with the existing configuration. It will also create a backup of the original config file, named tailwind.config.backup.js
 
 ## CLI Example:
 
@@ -84,13 +84,13 @@ module.exports = {
 
 ## How It Works
 
-The shadecli tool takes a base color and generates 10 shades, ranging from lighter to darker.
+The `shadecli` tool takes a base color and generates 10 shades, ranging from lighter to darker.
 It updates your Tailwind config file to include these shades, merging them with any existing color configurations.
-If a tailwind.config.js file exists, shadecli creates a backup of the original file (named tailwind.config.js.bak) before making changes.
+If a tailwind.config.js file exists, `shadecli` creates a backup of the original file (named tailwind.config.js.bak) before making changes.
 
 ## Contributing
 
-We welcome contributions to shadecli! If you'd like to contribute, please fork the repository and create a pull request.
+We welcome contributions to `shadecli`! If you'd like to contribute, please fork the repository and create a pull request.
 
 ## License
 
