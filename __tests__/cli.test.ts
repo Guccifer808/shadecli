@@ -166,3 +166,6 @@ describe('CLI Tool Tests', () => {
     });
   });
 });
+
+// To do:
+// Test to check if the user is prompted when the color variable name already exists in the tailwind.config.js
